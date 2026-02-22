@@ -41,4 +41,4 @@ Jaat-Chatbot
 
 ## 👨‍💻 Developer
 
-Created by Tanishq Gupta
+Created by Tanishq Gupta and Rajat Singh
