@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kuronai — Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="theme">
+
+  <nav class="nav">
+    <div class="logo">Kuronai</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chatbot.html" class="active">Chatbot</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="chat-wrap glass">
+      <header class="chat-header">
+        <h2>Chatbot</h2>
+        <div class="header-controls">
+          <button id="voiceToggle" class="icon-btn" title="Toggle voice input">🎤</button>
+          <button id="clearBtn" class="icon-btn" title="Clear chat">🗑️</button>
+
+         
+        </div>
+      </header>
+
+      <div id="messages" class="messages" aria-live="polite"></div>
+
+      <form id="chatForm" class="composer" autocomplete="off">
+        <input id="messageInput" type="text" placeholder="Type a message..." />
+        <button id="sendBtn" class="btn">Send</button>
+      </form>
+
+      <div class="memory glass small">
+        <strong>Last visits:</strong>
+        <div id="memoryList" class="memory-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Kuronai • Mint + Midnight</small>
+  </footer>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
